@@ -3,6 +3,8 @@ const wrapper = document.querySelector(".wrapper"),
     qrInput = wrapper.querySelector(".form input"),
     qrImg = wrapper.querySelector(".qr-code img")
 
+
+const generateBtn2 = document.getElementById("generateBtn2")
 generateBtn.addEventListener("click", () => {
     let qrValue = qrInput.value
     if (!qrValue) return;
