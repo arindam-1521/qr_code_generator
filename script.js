@@ -8,8 +8,15 @@ generateBtn.addEventListener("click", () => {
     if (!qrValue) return;
     console.log(qrValue)
     qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${qrValue}`
+    qrtext.innerHTML = "Qr for " + qrValue;
     qrImg.addEventListener("load", () => {
         wrapper.classList.add("active")
     })
     // wrapper.classList.add("active")
+})
+
+generateBtn2.addEventListener("click", () => {
+    qrtext.innerHTML = ""
+    wrapper.classList.remove("active")
+    qrInput.value = ""
 })
