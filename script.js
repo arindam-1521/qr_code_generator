@@ -13,6 +13,8 @@ generateBtn.addEventListener("click", () => {
     qrtext.innerHTML = "Qr for " + qrValue;
     qrImg.addEventListener("load", () => {
         wrapper.classList.add("active")
+        // generateBtn2.classList.add("active")
+
     })
     // wrapper.classList.add("active")
 })
@@ -21,4 +23,5 @@ generateBtn2.addEventListener("click", () => {
     qrtext.innerHTML = ""
     wrapper.classList.remove("active")
     qrInput.value = ""
+    // generateBtn2.style.display = "none"
 })
